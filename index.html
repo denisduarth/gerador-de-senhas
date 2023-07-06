@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            <div class="main-title">
+                Gerador 
+                <br>
+                de Senhas
+                
+                <img src="./img/icon.png" alt="" srcset="">
+            </div>
+            <p class="text">****************</p>
+        </h1>
+
+        <div class="input">
+            <p id="password">Clique para gerar uma senha!</p>
+            
+            <button onclick="copiar()" title="Copiar para a área de transferência">
+                <span class="material-symbols-rounded">
+                    content_copy
+                </span>
+            </button>
+        </div>
+
+        <p id="copiado"></p>
+
+        <button onclick="gerarSenha()" class="new-password" title="Gerar nova senha">
+            <span class="material-symbols-rounded">
+                lock
+            </span>
+            Gerar nova senha
+        </button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
